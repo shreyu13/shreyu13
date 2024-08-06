@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>register form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+   function data() {
+      var a=document.getElementById(id="name").value;
+      var b=document.getElementById(id="sem").value;
+      var c=document.getElementById(id="register").value;
+      var d=document.getElementById(id="mail").value;
+      var e=document.getElementById(id="phone").value;
+      var f=document.getElementById(id="gender").value;
+      var i=document.getElementById(id="add").value;
+
+      if (a==""||b==""||c==""||d==""||e==""||i==""||f==""||g=="") {
+         alert("fill the all box")
+         return false;
+      }
+      else if (e.length>10||e.length<10) {
+         alert("number shoud be 10 digit")
+         return false;
+      }
+      else if(isNaN(e)){
+         alert("plese enter vaild number")
+         return false;
+      }
+      else if(!isVaildEmail(dvalue)){
+         alert("plese enter valied")
+      }
+      else{
+       true;
+      }
+
+   }
+</script>
+<center>
+<body>
+    <section>
+     <center><h2> Register form</h2>
+     <form  onsubmit="return data()">
+      <table>
+            <tr>
+                <td>
+                    <span>NAME</span>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                 <input type="text" id="name" placeholder="enter your name"> <br>
+
+               </td>
+            </tr>
+         <tr>
+            <td> 
+                <span>SEM</span> 
+            </td>
+         </tr>
+         <tr>
+            <td>
+              <input type="number" max="6" min="1" id="sem" placeholder="enter your sem"> <br>
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <span>REGISTER NUMBER</span>
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <input type="box" id="register" placeholder="enter your register number"> <br>
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <span>EMAIL</span>
+            </td>
+         </tr>
+         <tr>
+            <td> 
+                <input type="text" id="mail" placeholder="enter your gmail id"> <br>
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <span>PHONE NUMBER</span>
+            </td>
+         </tr>
+         <tr>
+            <td> 
+                <input type="number" id="phone"  maxlength="10" placeholder="enter your phone number"> <br>
+
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="gender">SELECT THE GENDER</label>
+            </td>
+            <tr>
+            <td>
+               <select name="gender" id="gender">
+                  <option value="male"> MALE</option>
+                  <option value="female"> FEMALE</option>
+                  <option value="others"> OTHERS</option>
+               </select>
+            </td>
+            </tr>
+         </tr>    
+         <tr>
+            <td>
+                <span>ADDRESS</span>
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <textarea placeholder="enter your address" id="add"></textarea><br>
+            </td>
+         </tr>    
+         <tr>
+            <td>
+                <button type="submit">submit</button>
+            </td> 
+         </tr>
+        </table>  
+     </form >
+      </center> 
+    </section>
+</body>
+</html>

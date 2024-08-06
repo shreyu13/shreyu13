@@ -1,0 +1,30 @@
+body {
+    background-color: lightskyblue;
+    font-style: oblique;
+}
+
+input {
+    border: 100px;
+    height: 1pc;
+    width: 10pc;
+    font-style: oblique;
+    background-color: lightblue;
+    border-radius: 6px;
+}
+select {
+    background-color: lightblue;
+}
+textarea {
+    border: 1px;
+    background-color: lightblue;
+}
+button {
+    color: darkblue;
+    padding: 10px 22px;
+    border-radius: 6px;
+    background-color: lightblue;
+    transition-duration: 5s;
+}
+button::after {
+    transform: scale(0.96);
+}
